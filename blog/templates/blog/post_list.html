@@ -3,15 +3,17 @@
         <title>Python</title>
     </head>
     <body>
-        <div>
-            <h2><a href="/">Notizen</a></h2>
+        <div><h2><a href:"/">Meine Notizen</a></h2>
         </div>
 
+        {% for post in posts %}
         <div>
-            <p>published: Jan.2020</p>
-            <h3><a href="">My first post</a></h3>
-            <p>Great start</p>
+            <p>published: {{ post.published_date }}</p>
+            <h3><a href="">{{ post.title }}</a></h3>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
+        {% endfor %}
+
 
         <div>
             <p>published: Jan.2020</p>
