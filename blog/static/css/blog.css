@@ -23,6 +23,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Titillium Web', sans-serif;
+    color: #828282
 }
 
 .date {
@@ -48,7 +49,7 @@ h1, h2, h3, h4 {
     margin-bottom: 20px;
 }
 
-.post h3 a, .post h3 a:visited {
+.post h2 a, .post h2 a:visited {
     color:  #008080;
 }
 
